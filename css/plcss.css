@@ -1,0 +1,175 @@
+body {
+  margin: 0px;
+  background-color: #f1e3cc;
+  text-align: center;
+}
+
+header {
+  font-family: 'Monofett', cursive;
+  font-size: 60px;
+  text-align: center;
+  color: #141414;
+}
+
+#header-img{
+  max-height: 70%;
+  max-width: auto;
+  padding-right: 5px;
+  position: relative; /*adding position: absolute; helps with places images where you want. top: 5px; = adding 5px to the top of the image wich is what I was encountering here */
+  top: 5px;
+}
+
+.header-box {
+  border-sizing: border-box;
+  height: 70px;
+  max-width: 100%;
+  padding: 10px 0px 20px 0px;
+  margin: 0;
+}
+
+.img-bg {
+  background: url(https://t3.ftcdn.net/jpg/01/62/83/50/240_F_162835080_7f4U4NAOJQAxBM4EuasNSohJAokl2SZ0.jpg); /*note to self, learn how to crop and position an image source */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* <-- extra content will be hidden */
+  background-color: #583f2f;
+  position: sticky; /* Makes the nav bar stick to the direction of choice when scrolling. Must also specify at least one of top, right, bottom or left for sticky positioning to work. */
+  top: 0;
+}
+
+.nav-link {
+  float: left; /* float property is used for positioning, left will make the elements float to the left of its container */
+  font-family: 'Inconsolata', cursive;
+  font-size: 20px;
+  border-right: 1px solid #bbb;
+}
+
+.active {
+  background-color: #2f190a; /* lets users know what page they're on */
+}
+
+li a {
+  display: block; /* block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can). */
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #2f190a;
+  border-radius: 7px;
+}
+
+.login-button {
+  font-family: 'Inconsolata', cursive;
+  font-size: 20px;
+  border-left: 1px solid #bbb;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Special Elite', cursive;
+  font-size: 40px;
+  letter-spacing: 3px;
+  padding-top: 50px;
+}
+
+.center {
+  display: block;
+  width: 500px;
+  height: auto;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.featured-section {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 2px;
+  line-height: 1.5; /* this font was specifically close together, adjusted font height to make it more legible */
+}
+
+p {
+  font-family: 'Special Elite', cursive;
+}
+
+.grid {
+  display: flex;
+  grid-template-columns: auto auto auto auto;
+ }
+
+.products {
+  width: auto;
+  height: auto;
+  max-height: 300px;
+  padding: 15px;
+  position: relative;
+  right: 210px;
+}
+
+.grid-container {
+  display: grid;
+  position: relative; 
+  right: 200px;
+  grid-template-columns: auto auto auto; /* makes all columns the same length */
+  width: 1400px;
+  align-content: center;
+  grid-column-gap: 70px; /* adds gap between columns */
+  
+}
+
+h2 {
+  font-family: 'Special Elite', cursive;
+  font-size: 30px;
+  text-align: center;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-family: 'Inconsolata', cursive;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase; /* makes all text uppercase */
+  border-radius: 7px;
+  background: #583f2f;
+  cursor: pointer; /* changes cursor shape */
+}
+
+.btn:hover {
+  background-color: #2f190a;
+  border-radius: 7px;
+}
+
+.video {
+  position: relative;
+  bottom: 25px;
+}
+
+.btn-submit {
+  padding: 0 20px;
+  height: 30px;
+  font-family: 'Inconsolata', cursive;
+  font-size: 18px;
+  font-weight: 900;
+  border-radius: 7px;
+  background: #583f2f;
+  cursor: pointer;
+}
+
+.email {
+  width: 250px;
+  height: 20px;
+}
+
+form {
+  position: relative;
+  bottom: 25px;
+}

@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+  
+   <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Jerel Layog">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="FreeCodeCamp Product Landing Page">
+     <title>Product Landing Page</title>
+     <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700|Monofett|Special+Elite" rel="stylesheet">
+  </head>
+  
+  <body>
+ 
+  <header id="header" class="header-box img-bg"><img id="header-img" src="https://png2.kisspng.com/sh/826866dd5d903bd0196df5d770c28848/L0KzQYm3VME5N6ZpiZH0aYP2gLBuTgR6eJZ8itt9ZYKwc7F0kQV1baMygdV4boOwfbLqiPlvbV58itt9aX7qPcXCkPV4epp5feQ2NXHnR4O7hcc4OWI3Tqg3Nki1QYa7VsIyPWM5SKYEMUK6RIe6Ur5xdpg=/kisspng-typewriter-computer-icons-machine-writing-typewriter-5ad724e7711266.6821546215240491274632.png" alt="Typewriter Logo" > Modern Typewriters
+    
+    <nav id="nav-bar">
+    <ul> <!--- Nav-bars usually use unordered lists with bullets removed -->
+      <li class="nav-link active"><a href="#home">Home</a></li><!--- insterting the active class will let users know what page they are on --->
+      <li class="nav-link"><a href="#featured">Featured</a></li>
+      <li class="nav-link"><a href="#explore">Explore</a></li>
+      <li class="nav-link"><a href="#about">About</a></li>
+      <li style="float:right" class="login-button"><a href="#login">Login</a></li> <!--- inserting style="float:right" will move only this element to the right side, but I could have just made a separate class. This is the much quicker way --->
+    </ul>
+    </nav> 
+    </header>
+    
+    <div id="home">
+      <h1>Old-fashioned typewriters with a modern twist</h1>
+      <img src="https://images.unsplash.com/photo-1533040038109-9b1fb74bb5d3?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0ec98896ef17b7453d318ccd8dd10c20&auto=format&fit=crop&w=1275&q=80" alt="typewriter on wooden table" class="center">
+    </div><br>
+    
+    <div class="featured-section">
+    <p>Lipsum dolor sit amet, consectetur adipiscing elit. Maecenas rutrum nunc ut laoreet congue. Pellentesque at tortor tristique, porttitor diam imperdiet, semper massa. Vestibulum facilisis nulla ante, et semper diam porta sed. Proin vel quam porta, faucibus risus non, fringilla lectus. Pellentesque vel pulvinar magna, id rhoncus ante. Pellentesque nec laoreet velit. Vivamus eget condimentum urna. Fusce sed fringilla arcu. Proin sem est, molestie a vulputate at, volutpat eu ligula. Aenean ante nisi, tincidunt eget mattis nec, feugiat vitae erat. Ut tempor fringilla sapien in tincidunt. Quisque nibh elit, accumsan vitae orci viverra, pharetra semper ligula. Nulla eleifend felis nec odio efficitur luctus. Suspendisse eu ante quam. Fusce condimentum magna a magna gravida, at ullamcorper risus sollicitudin. Ut sed lorem consectetur, maximus nisl vitae, volutpat augue.</p>
+      
+      <div>
+        <section id="featured">
+          <div class="grid">
+            <img src="https://images.unsplash.com/photo-1532032582455-65bf86c5a76f?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=72dd3fd1d2ea7838bc289b004f7d2f93&auto=format&fit=crop&w=1350&q=80" alt="typewriter1" class="products"> 
+            <img src="https://images.unsplash.com/photo-1530819568329-97653eafbbfa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=bd6e6ec6ff746fcb7e6e548de7684a1b&auto=format&fit=crop&w=1346&q=80" alt="typewriter2" class="products">
+            <img src="https://images.unsplash.com/photo-1520241093788-ba1b2badc28b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3111f5d29741001ef78fbcb6aa9e754b&auto=format&fit=crop&w=1335&q=80" alt="typewriter3" class="products">
+          </div>
+        </section>
+      </div>
+     
+      <section id="explore">
+      <div class="grid-container"> <!--- remember this element to section off columns or rows --->
+        <div>
+          <h2>$75</h2>
+            <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut accumsan, ex et congue hendrerit, leo neque tincidunt neque, eu suscipit orci quam molestie metus.</p><button class="btn">Select</button>
+          </div>
+          <div>
+            <h2>$115</h2>
+            <p>Donec et leo hendrerit, eleifend nunc id, vehicula nisl. Quisque sodales odio eget leo commodo ultrices. Fusce vel mattis metus. Sed vel lacus eget sem porttitor hendrerit. .</p> <button class="btn">Select</button>
+        </div>
+        <div>
+          <h2>$100</h2>
+          <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam malesuada, turpis non venenatis rutrum, est nisi tempus massa, quis pharetra dui dolor nec felis. </p><button class="btn">Select</button>
+        </div>
+       </div>
+      </section>
+      
+      <section id="video">
+        <div>
+          <h2>How to use a typewriter</h2>
+          <!--- html element for youtube videos (embed) below. For some reason it needs /embed/ in the URL --->
+          <iframe height="400" width="720"  src="https://youtube.com/embed/FkUXn5bOwzk" class="video"></iframe>
+        </div><br>
+      </section>
+      
+      <section id="email">
+        <h2>Would you like to subscribe to our newsletter?</h2>
+        <form id="form" action="/https://www.freecodecamp.com/email-submit">
+    <input name="email" id="email" type="email" placeholder="Enter your email address" required class="email">
+    <input id="submit" type="submit" value="Yes please!" class="btn-submit">
+  </form>
+    </section>
+  
+  </body>
+</html>
+          
